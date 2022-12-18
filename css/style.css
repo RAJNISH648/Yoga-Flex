@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Open Sans', sans-serif;
+}
+:root{
+  --gray:#484f5b;                   
+}
+html,
+body{
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; 
+  color: var(--gray);
+}
+p{
+  font-size: 1.1rem;
+  font-weight: 500; 
+  color: gray;
+}
+h3{
+  color: var(--gray);
+  font-size: 2.5rem;
+  font-weight: 600;        
+}
+h4{
+  color: var(--gray);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+.inner{
+  max-width: 1200px;         
+  margin: 0 auto;
+  padding: 0  5px;
+}
+.flex{
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  align-items: center;
+}
+/* navigation */  
+.full-width{
+  width: 100%;
+  background-color: #f8f9fa;  
+  padding: 15px 0 10px;
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+}
+.fixed-top{
+  position: fixed;    
+  top: 0;
+  right: 0;
+  left: 0;          
+  z-index: 1030;
+}
+.navigation .navbar{
+  display: flex; 
+  align-items: center;
+}
+li{
+  list-style: none;
+  padding: 0px 20px;  
+  font-size: 18px;         
+  font-weight: 400;
+  text-transform: capitalize;
+}
+a{
+  text-decoration: none;
+  color: gray;
+}
+.active{
+  color: #000;
+}
+img, svg {
+  width: 100%;
+  vertical-align: middle;
+}
+.sec_padd{
+  padding: 50px 0;
+}
+nav button{
+  background: none;
+  border: none;
+  display: none; 
+}
+nav button .fa-bars{
+  font-size: 30px;           
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+}
+/* banner */  
+.banner{
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 0; 
+}
+.banner .container{
+  width: 100%;
+  align-items: flex-start;
+}
+.banner .container .images{
+  width: 45%;
+}
+.banner .container .contant{
+  width: 45%;                   
+}
+.banner .container .contant h2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.padd_top{
+  padding-top: 80px;
+}
+.padd{
+  padding: 35px 0; 
+}
+.btn{
+  border: none;
+  background: none;
+  background-color: #e6c8c3;
+  padding: 12px 20px; 
+  text-transform: uppercase;   
+  border: 0;            
+} 
+.btn a{
+  color: var(--gray) !important;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px; 
+  font-weight: 700;
+}
+.btn:hover{
+  transform: skew(-10deg);
+}
+/* pregnant */
+#pregnant{
+  width: 100%;                               
+  background-image: url("../img/body1_img.png"); 
+  height: 100vh;
+  background-attachment: fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;      
+  display: flex;
+  align-items: center;
+}
+#pregnant .text{ 
+  width: 50%;
+}
+/* program */ 
+#program .box{
+  width: 30%;   
+  text-align: center;      
+} 
+#program .box .images{
+  width:  100px;           
+  height: 100px;   
+  margin: 0 auto;
+  position: relative;            
+}
+#program .box .images img{
+  width: 100%;  
+  position: absolute;
+  left: 0;  
+  bottom: 0;  
+} 
+#program .box .images .img2{
+  z-index: 999; 
+  margin-bottom: 20px;
+}
+#program .box .para{
+  margin-top: 30px;  
+}
+/* Pranayama */
+#Pranayama .two-sec 
+.paragraph, .image-sec{
+   width: 45%;
+}
+/* join-now */ 
+#join-now{ 
+  width: 100%;
+  height: 70vh; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position:bottom center;
+  background-image: url(../img/body4/body4_img.png); 
+  position: relative;
+}
+#join-now .join-now_container{
+  width: 50%;
+  position: absolute;    
+  top: 20%;           
+  right: 111px;
+}
+/* gallery */
+#gallery{
+  text-align: center; 
+}   
+.heading{
+  max-width: 800px ; 
+  margin: 0 auto; 
+}
+#gallery .gallery-container .gallery-sec{
+  width: 30%;  
+  border-radius: 7px;  
+  box-shadow: 2px 2px 5px -2px;
+}
+#gallery .gallery-container .gallery-sec .gallery-text{
+  padding: 10px; 
+}
+.custom_padd{
+  padding: 60px 0;
+}
+.custom_para{
+  padding: 10px 0;    
+}
+/* yoga-training */ 
+#yoga-training{
+  background-color: #e5ccc6;
+}
+#yoga-training .yoga_container 
+.videoSection, .yoga_text{
+  width: 48%;  
+}
+/* videoSection */ 
+.videoSection{
+  position: relative;
+}
+.videoSection .playButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+.videoSection .playButton .fa-play {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+}
+.social .fa-brands{
+  color: var(--gray);  
+  font-size: 2rem;        
+  padding-right: 20px; 
+}
+/* get-touch */ 
+#get-touch{
+  width: 100%;
+  text-align: center; 
+}
+#get-touch .form-sec{
+  width: 65%; 
+  margin: 0 auto;
+}
+input, textarea{
+  width: 100%; 
+  margin: 10px 0;   
+  padding: 5px 12px; 
+  font-size: 16px;   
+  border: 0;
+  border: 1px solid gray;
+  border-radius: 5px; 
+}
+.custom_mt{
+  margin-top: 15px; 
+}
+/* footer */  
+#footer{
+  background-color: var(--gray);
+} 
+#footer .footer_container{
+  align-items: flex-start;
+}
+#footer h4{
+  color: #fff; 
+}
+#footer h5{
+  color: #fff;  
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+#footer p{
+  color: #fff; 
+  padding: 20px 0;  
+}
+#footer a{
+  color: #fff;  
+  line-height: 30px;  
+  font-size: 1.1rem;
+}
+.company, .copyright{
+  width: 20%;
+}
+.sidemap, .lorem-ipsum, .sit-amet{
+  width: 15%; 
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer_container .copyright .f_logo{
+  width: 80px;
+}
+#footer .social .fa-brands{
+  color: #fff; 
+}
+
+/* media queries */ 
+@media only screen and (max-width:1200px){
+  .banner .container .contant .padd_top{
+    padding-top: 0;
+  }
+  .inner{
+    max-width: 1000px;         
+    padding: 0  15px;
+  }
+}
+@media only screen and (max-width:900px){
+  html{
+    font-size: 12px;
+  }
+  .navigation{
+    position: relative;                 
+  }
+  .navigation .navbar{
+    width: 100%;
+    display: none; 
+    background-color: #f8f9fa;  
+    position: absolute;
+    top: 90px; 
+    left: 0;
+    padding: 10px 0;
+  }
+  .navigation .navbar li{
+    line-height: 40px;      
+  }
+  nav button{
+    display: block;
+  }
+  #pregnant .text{
+    width: 70%;
+  }
+}
+@media only screen and (max-width:700px){
+  .inner{
+    max-width: 500px;         
+    padding: 0  15px; 
+  }
+  .padd{
+    padding: 25px 0; 
+  }
+  .banner{
+    padding: 100px 0 50px;  
+  }
+  .banner .container .images, .contant{
+    width: 100%;
+    padding-top: 50px;
+  }
+  .banner .container .contant{
+    width: 100%; 
+  }
+  #pregnant .text{
+    width: 90%;  
+  }
+  #program{
+    padding: 0;
+  }
+  #program .box{
+    width: 100%;
+    padding: 50px 0 20px;
+  }
+  #Pranayama .two-sec
+  .paragraph, .image-sec{
+    width: 100%;
+  }
+  #Pranayama .two-sec .image-sec{
+    padding-top: 50px;
+  }
+  #gallery .gallery-container .gallery-sec{
+    width: 100%; 
+    margin-top: 50px;
+  }
+  #yoga-training .yoga_container 
+  .videoSection, .yoga_text{
+    width: 100%;
+  }
+  #yoga-training .yoga_container .yoga_text{
+    padding-top: 50px;
+  }
+  .company, .copyright, .sidemap, .lorem-ipsum, .sit-amet{
+    width: 100%;
+    padding-top: 30px;
+  }
+  #footer h5{
+    padding-bottom: 10px;
+  }
+  .custom_padd{
+    padding: 30px 0;
+  }
+  #get-touch .form-sec{
+    width: 100%;
+  }
+  #Pregnant .text{
+    width: 80%;
+  }
+}
+@media only screen and (max-width:500px){
+  #join-now .join-now_container{
+    width: 80%;
+    left: 0;
+    padding-left: 15px;
+  }
+}
+
+
+
+
+
+
